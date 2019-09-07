@@ -1,0 +1,31 @@
+<resources>
+
+    <!-- Here you can change the name of the app -->
+    <string name="app_name">Sacred Games Soundboard</string>
+
+    <!-- Fill this string-array "list" with the names for your buttons -->
+    <string-array name="soundNames">
+        <item>Teetar gand</item>
+        <item>Chaand</item>
+        <item>Teetar</item>
+        <item>Dubja</item>
+        <item>Pyaar</item>
+        <item>Saal</item>
+        <item>Daring</item>
+        <item>Chaaku gala</item>
+        <item>Muutega</item>
+        <item>Chaatri</item>
+        <item>Taabut</item>
+        <item>Gaandu</item>
+        <item>Aham Bramahsimi</item>
+        <item>Brahma HUU</item>
+        <item>Bhagwan</item>
+        <item>Make Love</item>
+        <item>Dhandey</item>
+    </string-array>
+
+    <!-- Text/Names for all popupmenu actions -->
+    <string name="action_send">Share</string>
+    <string name="action_ringtone">Save as ...</string>
+
+</resources>
