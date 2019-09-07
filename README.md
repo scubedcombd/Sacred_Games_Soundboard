@@ -1,9 +1,13 @@
-# It's just a simple Soundboard DUUUH ;P
-This repository contains a full working Android soundboard that is based on my YouTube playlist "How To: Android Soundboard" until part 8.
+# SacredGamesSoundboard
+A fun project consisting of all dialogues from the popular Netflix original Sacred Games                                    
 
-This soundboard has the functions to share sounds, set sounds as ringtone but does not contain the ability to add favorites.
+IN ORDER TO LAUNCH THIS APP IN YOUR ANDROID STUDIO FOLLOW THESE STEPS                            
+1)DOWNLOAD THIS REPO.        
+2)EXTRACT IT INTO YOUR DESIRED FOLDER                      
+3)DOWNLOAD, INSTALL AND OPEN ANDROID STUDIO                           
+4)"IMPORT"(i REPEAT DO NOT OPEN RATHER "IMPORT") THE UNZIPPED FOLDER                            
+5)BUILD PROJECT. PRESS THE HAMMER SIGN ON THE TOP RIGHT(AS 3.5)                           
+6)CONNECT YOUR PHONE OR IF YOU HAVE A GOOD PC USE AN EMULATOR                          
+7)PRESS RUN                               
+8)WAIT                                        
 
-If you want to have a soundboard with the favorites function and database support take a look at the main repository:
-https://github.com/CodeRedDev/HowToAndroidSoundboard.git
-
-I will add some extra branches with some functions that are not included in the main soundboard tutorials.
