@@ -13,7 +13,7 @@
         android:id="@+id/imageViewItem"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:src="@drawable/make_love"/>
+        android:src="@drawable/teetar"/>
 
     <TextView
         android:text="I'm a button"

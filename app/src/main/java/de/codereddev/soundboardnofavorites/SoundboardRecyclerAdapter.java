@@ -14,7 +14,8 @@ public class SoundboardRecyclerAdapter extends RecyclerView.Adapter<SoundboardRe
 
     // Declare an ArrayList that will contain all SoundObjects
     private ArrayList<SoundObject> soundObjects;
-
+    private int i;
+//private int i=0;
     // Demand all needed informations for the RecyclerView
     // ArrayList<SoundObject> : Main content provider
     public SoundboardRecyclerAdapter(ArrayList<SoundObject> soundObjects){
@@ -23,122 +24,128 @@ public class SoundboardRecyclerAdapter extends RecyclerView.Adapter<SoundboardRe
         this.soundObjects = soundObjects;
     }
 
-    private int i=0;
+
+
+
 
     // Initialises each RecyclerView item
     @Override
     public SoundboardViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
 
-        View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.sound_item, null);
-                i++;
-                return new SoundboardViewHolder(itemView);
+//        View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.sound_item, null);
+//                 return new SoundboardViewHolder(itemView);
+
+if(i>17)
+{
+     i = 0;
+}
+
+    switch (i) {
+        case 0:
+            View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.sound_item, null);
+            i++;
+            return new SoundboardViewHolder(itemView);
 
 
-//        switch(i) {
-//            case 0 :
-//                View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.sound_item, null);
-//                i++;
-//                return new SoundboardViewHolder(itemView);
-//
-//
-//            case 1 :
-//                View itemView2 = LayoutInflater.from(parent.getContext()).inflate(R.layout.sound_item2, null);
-//                i++;
-//                return new SoundboardViewHolder(itemView2);
-//
-//            case 2 :
-//                View itemView3 = LayoutInflater.from(parent.getContext()).inflate(R.layout.sound_item3, null);
-//                i++;
-//                return new SoundboardViewHolder(itemView3);
-//
-//            case 3 :
-//                View itemView4 = LayoutInflater.from(parent.getContext()).inflate(R.layout.sound_item4, null);
-//                i++;
-//                return new SoundboardViewHolder(itemView4);
-//
-//            case 4 :
-//                View itemView5 = LayoutInflater.from(parent.getContext()).inflate(R.layout.sound_item5, null);
-//                i++;
-//                return new SoundboardViewHolder(itemView5);
-//
-//
-//            case 5 :
-//                View itemView6 = LayoutInflater.from(parent.getContext()).inflate(R.layout.sound_item6, null);
-//                i++;
-//                return new SoundboardViewHolder(itemView6);
-//
-//            case 6 :
-//                View itemView7 = LayoutInflater.from(parent.getContext()).inflate(R.layout.sound_item7, null);
-//                i++;
-//                return new SoundboardViewHolder(itemView7);
-//
-//            case 7 :
-//                View itemView8 = LayoutInflater.from(parent.getContext()).inflate(R.layout.sound_item8, null);
-//                i++;
-//                return new SoundboardViewHolder(itemView8);
-//
-//            case 8 :
-//                View itemView9 = LayoutInflater.from(parent.getContext()).inflate(R.layout.sound_item9, null);
-//                i++;
-//                return new SoundboardViewHolder(itemView9);
-//
-//            case 9 :
-//                View itemView10 = LayoutInflater.from(parent.getContext()).inflate(R.layout.sound_item10, null);
-//                i++;
-//                return new SoundboardViewHolder(itemView10);
-//
-//
-//            case 10 :
-//                View itemView11 = LayoutInflater.from(parent.getContext()).inflate(R.layout.sound_item11, null);
-//                i++;
-//                return new SoundboardViewHolder(itemView11);
-//
-//            case 11 :
-//                View itemView12 = LayoutInflater.from(parent.getContext()).inflate(R.layout.sound_item12, null);
-//                i++;
-//                return new SoundboardViewHolder(itemView12);
-//
-//            case 12 :
-//                View itemView13 = LayoutInflater.from(parent.getContext()).inflate(R.layout.sound_item13, null);
-//                i++;
-//                return new SoundboardViewHolder(itemView13);
-//
-//            case 13 :
-//                View itemView14 = LayoutInflater.from(parent.getContext()).inflate(R.layout.sound_item14, null);
-//                i++;
-//                return new SoundboardViewHolder(itemView14);
-//
-//            case 14 :
-//                View itemView15 = LayoutInflater.from(parent.getContext()).inflate(R.layout.sound_item15, null);
-//                i++;
-//                return new SoundboardViewHolder(itemView15);
-//
-//            case 15 :
-//                View itemView16 = LayoutInflater.from(parent.getContext()).inflate(R.layout.sound_item16, null);
-//                i++;
-//                return new SoundboardViewHolder(itemView16);
-//
-//            case 16 :
-//                View itemView17 = LayoutInflater.from(parent.getContext()).inflate(R.layout.sound_item17, null);
-//                i++;
-//                return new SoundboardViewHolder(itemView17);
-//
-//
-//            // You can have any number of case statements.
-//            default : // Optional
-//                View itemView_default = LayoutInflater.from(parent.getContext()).inflate(R.layout.sound_item11, null);
-//                i=0;
-//                return new SoundboardViewHolder(itemView_default);
-//
-//            }
+        case 1:
+            View itemView2 = LayoutInflater.from(parent.getContext()).inflate(R.layout.sound_item2, null);
+            i++;
+            return new SoundboardViewHolder(itemView2);
 
+        case 2:
+            View itemView3 = LayoutInflater.from(parent.getContext()).inflate(R.layout.sound_item3, null);
+            i++;
+            return new SoundboardViewHolder(itemView3);
+
+        case 3:
+            View itemView4 = LayoutInflater.from(parent.getContext()).inflate(R.layout.sound_item4, null);
+            i++;
+            return new SoundboardViewHolder(itemView4);
+
+        case 4:
+            View itemView5 = LayoutInflater.from(parent.getContext()).inflate(R.layout.sound_item5, null);
+            i++;
+            return new SoundboardViewHolder(itemView5);
+
+
+        case 5:
+            View itemView6 = LayoutInflater.from(parent.getContext()).inflate(R.layout.sound_item6, null);
+            i++;
+            return new SoundboardViewHolder(itemView6);
+
+        case 6:
+            View itemView7 = LayoutInflater.from(parent.getContext()).inflate(R.layout.sound_item7, null);
+            i++;
+            return new SoundboardViewHolder(itemView7);
+
+        case 7:
+            View itemView8 = LayoutInflater.from(parent.getContext()).inflate(R.layout.sound_item8, null);
+            i++;
+            return new SoundboardViewHolder(itemView8);
+
+        case 8:
+            View itemView9 = LayoutInflater.from(parent.getContext()).inflate(R.layout.sound_item9, null);
+            i++;
+            return new SoundboardViewHolder(itemView9);
+
+        case 9:
+            View itemView10 = LayoutInflater.from(parent.getContext()).inflate(R.layout.sound_item10, null);
+            i++;
+            return new SoundboardViewHolder(itemView10);
+
+
+        case 10:
+            View itemView11 = LayoutInflater.from(parent.getContext()).inflate(R.layout.sound_item11, null);
+            i++;
+            return new SoundboardViewHolder(itemView11);
+
+        case 11:
+            View itemView12 = LayoutInflater.from(parent.getContext()).inflate(R.layout.sound_item12, null);
+            i++;
+            return new SoundboardViewHolder(itemView12);
+
+        case 12:
+            View itemView13 = LayoutInflater.from(parent.getContext()).inflate(R.layout.sound_item13, null);
+            i++;
+            return new SoundboardViewHolder(itemView13);
+
+        case 13:
+            View itemView14 = LayoutInflater.from(parent.getContext()).inflate(R.layout.sound_item14, null);
+            i++;
+            return new SoundboardViewHolder(itemView14);
+
+        case 14:
+            View itemView15 = LayoutInflater.from(parent.getContext()).inflate(R.layout.sound_item15, null);
+            i++;
+            return new SoundboardViewHolder(itemView15);
+
+        case 15:
+            View itemView16 = LayoutInflater.from(parent.getContext()).inflate(R.layout.sound_item16, null);
+            i++;
+            return new SoundboardViewHolder(itemView16);
+
+        case 16:
+            View itemView17 = LayoutInflater.from(parent.getContext()).inflate(R.layout.sound_item17, null);
+            i++;
+            return new SoundboardViewHolder(itemView17);
+
+
+        // You can have any number of case statements.
+        default: // Optional
+            View itemView_default = LayoutInflater.from(parent.getContext()).inflate(R.layout.sound_item11, null);
+            i = 0;
+            return new SoundboardViewHolder(itemView_default);
+
+    }
+}
 
 
         // Set the default design for a element in the RecyclerView that is based on sound_item.xml
 
-    }
+
 
     @Override
+
     public void onBindViewHolder(SoundboardViewHolder holder, int position) {
 
         // Get a SoundObject from the ArrayList that also contains
@@ -152,7 +159,7 @@ public class SoundboardRecyclerAdapter extends RecyclerView.Adapter<SoundboardRe
 
         // Set the name of each sound button that is represented by the (SoundObject)object
         holder.itemTextView.setText(object.getItemName());
-
+//holder.itemView.setForeground();
 
        // holder.j.setImageResource(object.getItem());
 
