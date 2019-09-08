@@ -171,39 +171,39 @@ public class EventHandlerClass {
                     }
 
                     // Save as ringtone, alarm or notification
-                    if (item.getItemId() == R.id.action_ringtone) {
-
-                        // Create a little popup like dialog that gives the user the choice between the 3 types
-                        // THEME_HOLO_LIGHT was deprecated in API 23 but to support older APIs you should use it
-                        AlertDialog.Builder builder = new AlertDialog.Builder(view.getContext(), AlertDialog.THEME_HOLO_LIGHT);
-                        builder.setTitle("Save as...");
-                        builder.setItems(new CharSequence[]{"Ringtone", "Notification", "Alarm"}, new DialogInterface.OnClickListener(){
-
-                            @Override
-                            public void onClick(DialogInterface dialog, int which){
-
-                                // Decide on the users choice which information will be send to a method that handles the settings for all kinds of system audio
-//                                switch (which) {
+//                    if (item.getItemId() == R.id.action_ringtone) {
 //
-//                                    // Ringtone
-//                                    case 0:
-//                                        changeSystemAudio(context, RingtoneManager.TYPE_RINGTONE, file);
-//                                        break;
-//                                    // Notification
-//                                    case 1:
-//                                        changeSystemAudio(context, RingtoneManager.TYPE_NOTIFICATION, file);
-//                                        break;
-//                                    // Alarmton
-//                                    case 2:
-//                                        changeSystemAudio(context, RingtoneManager.TYPE_ALARM, file);
-//                                        break;
-//                                    default:
-//                                }
-                            }
-                        });
-                        builder.create();
-                        builder.show();
-                    }
+//                        // Create a little popup like dialog that gives the user the choice between the 3 types
+//                        // THEME_HOLO_LIGHT was deprecated in API 23 but to support older APIs you should use it
+//                        AlertDialog.Builder builder = new AlertDialog.Builder(view.getContext(), AlertDialog.THEME_HOLO_LIGHT);
+//                        builder.setTitle("Save as...");
+//                        builder.setItems(new CharSequence[]{"Ringtone", "Notification", "Alarm"}, new DialogInterface.OnClickListener(){
+//
+//                            @Override
+//                            public void onClick(DialogInterface dialog, int which){
+//
+//                                // Decide on the users choice which information will be send to a method that handles the settings for all kinds of system audio
+////                                switch (which) {
+////
+////                                    // Ringtone
+////                                    case 0:
+////                                        changeSystemAudio(context, RingtoneManager.TYPE_RINGTONE, file);
+////                                        break;
+////                                    // Notification
+////                                    case 1:
+////                                        changeSystemAudio(context, RingtoneManager.TYPE_NOTIFICATION, file);
+////                                        break;
+////                                    // Alarmton
+////                                    case 2:
+////                                        changeSystemAudio(context, RingtoneManager.TYPE_ALARM, file);
+////                                        break;
+////                                    default:
+////                                }
+//                            }
+//                        });
+//                        builder.create();
+//                        builder.show();
+//                    }
 
                 }
 
