@@ -1,10 +1,13 @@
-<resources>
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
 
     <!-- Here you can change the name of the app -->
     <string name="app_name">Sacred Games Soundboard</string>
 
     <!-- Fill this string-array "list" with the names for your buttons -->
-    <string-array name="soundNames">
+    <string-array name="soundNames"
+
+        android:textStyle="bold">
         <item>Teetar gand</item>
         <item>Chaand</item>
         <item>Teetar</item>

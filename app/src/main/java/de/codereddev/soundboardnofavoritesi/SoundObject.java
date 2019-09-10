@@ -1,6 +1,4 @@
-package de.codereddev.soundboardnofavorites;
-
-import android.graphics.drawable.Drawable;
+package de.codereddev.soundboardnofavoritesi;
 
 public class SoundObject {
 

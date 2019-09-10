@@ -1,4 +1,4 @@
-package de.codereddev.soundboardnofavorites;
+package de.codereddev.soundboardnofavoritesi;
 
 import org.junit.Test;
 

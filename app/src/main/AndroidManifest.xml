@@ -1,6 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
 
-    package="de.codereddev.soundboardnofavorites">
+    package="de.codereddev.soundboardnofavoritesi">
 
     <!-- Declare all permissions you need to use -->
     <!-- For all Android versions up to 5 this will be adequate to use this permissions -->
@@ -20,7 +20,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".SoundboardActivity"
+            android:name="de.codereddev.soundboardnofavoritesi.SoundboardActivity"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
